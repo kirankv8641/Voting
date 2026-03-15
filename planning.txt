@@ -1,0 +1,44 @@
+ voting application
+ whtttt??
+ A functionality where user can give vote to the given
+ set of candidates
+
+ models?
+ routes?
+
+functionality--
+
+ 1.user sign in /sign up
+ 2.see the list of candidates
+ 3.vote only one time,after voting , user cant vote again
+ 4.there is a route which shows the list of candidate and their live vote counts sorted by their vote count
+ 5.user data must contain their one unique government id proof named:aadhar card number
+ 6.one admin -maintain tble of candidates and he cnt able to vote at all
+ 7.user cn chnge their pssword
+ 8.user cn login only with aadhar card number and password
+ 9. Admin can't vote at all
+------------------------------------
+ https://github.com/Prince-1501/voting_app
+
+Routes 
+
+User authentication:
+     /signup:POST- Create a new account 
+     /login:POST-log in to an existing account.{ aadhar card number +password}
+
+ Voting :
+     /candidates:GET-Get yhe list of candidates.
+     /vote/:candidateId:POST-vote for a specific candidate.
+
+vote Counts:
+    /vote/counts:GET-Get the list of candidates sorted by their vote counts.
+
+ User Profile:
+    /  Profile:GET-Get the user's Profile information.
+    /Profile/password:PUT-Change the user's password.
+
+ Admin Candidate Management:
+    /candidates:POST-Create a new candidate.
+    /candidates/:candidateId/:PUT-update an existing candidate.
+    /candidates/:candidateId/:DELETE-Delete a candidate from the list.         
+
